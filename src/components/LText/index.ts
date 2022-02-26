@@ -6,3 +6,4 @@ LText.install = (app: App) => {
 }
 
 export default LText
+console.log(11)
