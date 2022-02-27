@@ -6,8 +6,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
+        with:
+          registry-url: https://registry.npmjs.org/ # 如果不配置将影响publish
+
       - run: npm install
-      - run: npm run build
       - run: npm publish
         env:
           NPM_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
