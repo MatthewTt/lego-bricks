@@ -1,6 +1,6 @@
 {
   "name": "lego-liu",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "private": false,
   "main": "dist/lego-liu-umd.js",
   "module": "dist/lego-liu-esm.js",
