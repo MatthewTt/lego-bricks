@@ -9,7 +9,7 @@ jobs:
         with:
           registry-url: https://registry.npmjs.org/ # 如果不配置将影响publish
 
-      - run: npm install
+      - run: npm ci
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
